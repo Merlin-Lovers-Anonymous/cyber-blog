@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cyber V0ID</title>
-    <link>https://www.saltinecrackers.org/</link>
-    <description>Recent content on Cyber V0ID</description>
+    <title>Projects on Cyber V0ID</title>
+    <link>https://www.saltinecrackers.org/projects/</link>
+    <description>Recent content in Projects on Cyber V0ID</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 10 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.saltinecrackers.org/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>CyberDiscord Open 2023 Windows Server Writeup</title>
-      <link>https://www.saltinecrackers.org/posts/cyberdiscord-open-2023-windows-server-writeup/</link>
-      <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.saltinecrackers.org/posts/cyberdiscord-open-2023-windows-server-writeup/</guid>
-      <description>Forensics Forensics 1 Question:
-Hash functions are one-way functions. Secure hash functions have several properties such as collision resistance, preimage resistance, and second preimage resistance. Hashes are the output of hash functions and are typically displayed to the user in hex.
-There is a file somewhere on this machine named &amp;ldquo;cain.zip&amp;rdquo;.
-What is the MD5 hash of this file?
-This question is pretty straightforward. The first step is to find this &amp;ldquo;cain.</description>
-    </item>
-    
+    <language>en</language><atom:link href="https://www.saltinecrackers.org/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Baldi&#39;s Basics Server 2022 - Super Hard - In Progress</title>
       <link>https://www.saltinecrackers.org/projects/baldi/</link>

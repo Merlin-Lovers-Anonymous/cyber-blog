@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Cyber V0ID</title>
-    <link>http://66.94.114.233/tags/</link>
+    <link>https://www.saltinecrackers.org/tags/</link>
     <description>Recent content in Tags on Cyber V0ID</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 10 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://66.94.114.233/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.saltinecrackers.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CyberPatriot</title>
-      <link>http://66.94.114.233/tags/cyberpatriot/</link>
+      <link>https://www.saltinecrackers.org/tags/cyberpatriot/</link>
       <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://66.94.114.233/tags/cyberpatriot/</guid>
+      <guid>https://www.saltinecrackers.org/tags/cyberpatriot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Writeup</title>
-      <link>http://66.94.114.233/tags/writeup/</link>
+      <link>https://www.saltinecrackers.org/tags/writeup/</link>
       <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://66.94.114.233/tags/writeup/</guid>
+      <guid>https://www.saltinecrackers.org/tags/writeup/</guid>
       <description></description>
     </item>
     

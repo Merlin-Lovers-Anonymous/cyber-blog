@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Cyber V0ID</title>
-    <link>http://66.94.114.233/posts/</link>
+    <link>https://www.saltinecrackers.org/posts/</link>
     <description>Recent content in Posts on Cyber V0ID</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 10 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://66.94.114.233/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.saltinecrackers.org/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CyberDiscord Open 2023 Windows Server Writeup</title>
-      <link>http://66.94.114.233/posts/cyberdiscord-open-2023-windows-server-writeup/</link>
+      <link>https://www.saltinecrackers.org/posts/cyberdiscord-open-2023-windows-server-writeup/</link>
       <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://66.94.114.233/posts/cyberdiscord-open-2023-windows-server-writeup/</guid>
+      <guid>https://www.saltinecrackers.org/posts/cyberdiscord-open-2023-windows-server-writeup/</guid>
       <description>Forensics Forensics 1 Question:
 Hash functions are one-way functions. Secure hash functions have several properties such as collision resistance, preimage resistance, and second preimage resistance. Hashes are the output of hash functions and are typically displayed to the user in hex.
 There is a file somewhere on this machine named &amp;ldquo;cain.zip&amp;rdquo;.

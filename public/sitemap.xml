@@ -2,24 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://66.94.114.233/posts/cyberdiscord-open-2023-windows-server-writeup/</loc>
+    <loc>https://www.saltinecrackers.org/posts/cyberdiscord-open-2023-windows-server-writeup/</loc>
     <lastmod>2023-06-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://66.94.114.233/</loc>
+    <loc>https://www.saltinecrackers.org/</loc>
     <lastmod>2023-06-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://66.94.114.233/tags/cyberpatriot/</loc>
+    <loc>https://www.saltinecrackers.org/tags/cyberpatriot/</loc>
     <lastmod>2023-06-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://66.94.114.233/posts/</loc>
+    <loc>https://www.saltinecrackers.org/posts/</loc>
     <lastmod>2023-06-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://66.94.114.233/tags/</loc>
+    <loc>https://www.saltinecrackers.org/tags/</loc>
     <lastmod>2023-06-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://66.94.114.233/tags/writeup/</loc>
+    <loc>https://www.saltinecrackers.org/tags/writeup/</loc>
     <lastmod>2023-06-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://66.94.114.233/categories/</loc>
+    <loc>https://www.saltinecrackers.org/projects/baldi/</loc>
+  </url><url>
+    <loc>https://www.saltinecrackers.org/projects/bubble/</loc>
+  </url><url>
+    <loc>https://www.saltinecrackers.org/categories/</loc>
+  </url><url>
+    <loc>https://www.saltinecrackers.org/projects/chuck/</loc>
+  </url><url>
+    <loc>https://www.saltinecrackers.org/projects/cincinnati/</loc>
+  </url><url>
+    <loc>https://www.saltinecrackers.org/projects/dora/</loc>
+  </url><url>
+    <loc>https://www.saltinecrackers.org/projects/mlp/</loc>
+  </url><url>
+    <loc>https://www.saltinecrackers.org/projects/</loc>
   </url>
 </urlset>
