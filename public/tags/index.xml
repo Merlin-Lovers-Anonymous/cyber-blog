@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Cyber V0ID</title>
+    <link>http://66.94.114.233/tags/</link>
+    <description>Recent content in Tags on Cyber V0ID</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 10 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://66.94.114.233/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CyberPatriot</title>
+      <link>http://66.94.114.233/tags/cyberpatriot/</link>
+      <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://66.94.114.233/tags/cyberpatriot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Writeup</title>
+      <link>http://66.94.114.233/tags/writeup/</link>
+      <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://66.94.114.233/tags/writeup/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

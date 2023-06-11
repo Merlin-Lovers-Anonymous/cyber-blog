@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>CyberDiscord Open 2023 Windows Server Writeup</title>
+    <meta name="description" content="A writeup for the CyberDiscord Open 2023 Windows Server image.">
+    <meta name="keywords" content='blog, gokarna, hugo, CyberPatriot, Writeup'>
+
+    <meta property="og:url" content="http://66.94.114.233/posts/cyberdiscord-open-2023-windows-server-writeup/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CyberDiscord Open 2023 Windows Server Writeup">
+    <meta property="og:description" content="A writeup for the CyberDiscord Open 2023 Windows Server image.">
+    <meta property="og:image" content="http://66.94.114.233/images/avatar.webp">
+    <meta property="og:image:secure_url" content="http://66.94.114.233/images/avatar.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CyberDiscord Open 2023 Windows Server Writeup">
+    <meta name="twitter:description" content="A writeup for the CyberDiscord Open 2023 Windows Server image.">
+    <meta property="twitter:domain" content="http://66.94.114.233/posts/cyberdiscord-open-2023-windows-server-writeup/">
+    <meta property="twitter:url" content="http://66.94.114.233/posts/cyberdiscord-open-2023-windows-server-writeup/">
+    <meta name="twitter:image" content="http://66.94.114.233/images/avatar.webp">
+
+    
+    <link rel="canonical" href="http://66.94.114.233/posts/cyberdiscord-open-2023-windows-server-writeup/" />
+
+    <link rel="stylesheet" type="text/css" href="http://66.94.114.233/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="http://66.94.114.233/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="http://66.94.114.233/css/dark.css">
+
+    <script src="http://66.94.114.233/js/svg-injector.min.js"></script>
+    <script src="http://66.94.114.233/js/feather-icons.min.js"></script>
+    <script src="http://66.94.114.233/js/main.js"></script>
+
+    
+    
+        <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+      });
+    </script>
+  
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://66.94.114.233">
+                <img src="http://66.94.114.233/images/avatar.webp" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://66.94.114.233">Cyber V0ID</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://66.94.114.233/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://66.94.114.233/posts/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://66.94.114.233/projects/"><span data-feather='code'></span> Projects </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://66.94.114.233/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/Cyber-V0ID"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://66.94.114.233/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://66.94.114.233/posts/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://66.94.114.233/projects/"><span data-feather='code'></span> Projects </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://66.94.114.233/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/Cyber-V0ID"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>CyberDiscord Open 2023 Windows Server Writeup</h1>
+        <small role="doc-subtitle">A writeup for the CyberDiscord Open 2023 Windows Server image.</small>
+        <p class="post-date">
+            June 10, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="http://66.94.114.233/tags/cyberpatriot">CyberPatriot</a></li>
+        
+            <li class="post-tag"><a href="http://66.94.114.233/tags/writeup">Writeup</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h1 id="forensics">Forensics</h1>
+<h2 id="forensics-1">Forensics 1</h2>
+<p>Question:</p>
+<p>Hash functions are one-way functions. Secure hash functions have several properties such as collision resistance, preimage resistance, and second preimage resistance. Hashes are the output of hash functions and are typically displayed to the user in hex.</p>
+<p>There is a file somewhere on this machine named &ldquo;cain.zip&rdquo;.</p>
+<p>What is the MD5 hash of this file?</p>
+<p>This question is pretty straightforward. The first step is to find this &ldquo;cain.zip&rdquo; file. For this, I simply installed the <a href="https://www.voidtools.com/">Everything tool from voidtools</a> and searched cain.zip to reveal it&rsquo;s in C:\Windows. After going there with Powershell I ran</p>
+<pre tabindex="0"><code>Get-FileHash -Algorithm MD5 cain.zip
+</code></pre><p>To get the md5 which was <code>c700ff8bdf9faef4df4b4fdd7b428376</code></p>
+<h2 id="forensics-2">Forensics 2</h2>
+<p>Question:</p>
+<p>Create a string that satisfies the following regular expression:</p>
+<pre tabindex="0"><code>^(\d{10}--?[^aA-Zb-mt-zn-prs]{4,5})\s+(ab)\s*(?:[\d]+)(\\\$\\)\.\s+.*\3\2\1p+$
+</code></pre><p>Oh, boy don&rsquo;t we all love regex. Well first off I found a website able to test my regex, the best one I found was <a href="https://regex101.com/">https://regex101.com/</a></p>
+<p>For some background on regex, <code>()</code> mark a capturing group that breaks up the regex into parts. There is also a non-capturing group that does pretty much the same thing. In our case, this is still an important distinction that will be apparent later. So our broken-up regex is as follows:</p>
+<pre tabindex="0"><code>Capturing Group 1
+(\d{10}--?[^aA-Zb-mt-zn-prs]{4,5})
+</code></pre><p>Let&rsquo;s tackle this piece by piece starting with capturing group 1. <code>\d</code> matches digits and <code>{10}</code> means it wants 10 of the previous token which was <code>\d</code>. So together <code>\d{10}</code> will match with any 10-digit string. For simplicity let&rsquo;s go with <code>1234567890</code>. Next is <code>--?</code>. Our string must have at least 1 <code>-</code> to match with the first <code>-</code> in the regex. However the <code>?</code> makes it so that we need 0-1 of the previous token, so we don&rsquo;t need to have a second one. So <code>--?</code> matches with <code>-</code>. Lastly <code>[^aA-Zb-mt-zn-prs]{4,5}</code> matches 4-5 characters that are not in the brackets. There are many we can use but since everyone likes money lets go with <code>$$$$</code>. So our string for group 1 is <code>1234567890-$$$$</code>.</p>
+<pre tabindex="0"><code>\s+
+</code></pre><p><code>\s</code> just matches with whitespace characters like <code> </code> and <code>+</code> means we can have a 1-unlimited number of them.</p>
+<pre tabindex="0"><code>Capturing Group 2
+(ab)
+</code></pre><p><code>ab</code> matches exactly with <code>ab</code>, so our string for group 2 is just <code>ab</code>.</p>
+<pre tabindex="0"><code>\s*
+</code></pre><p><code>\s*</code> means we can have a 0-unlimited number of spaces, so let&rsquo;s just stick to 0.</p>
+<pre tabindex="0"><code>Non-Capturing Group
+(?:[\d]+)
+</code></pre><p><code>\d</code> matches with any number, let&rsquo;s use <code>1</code>, the rest of the symbols don&rsquo;t matter.</p>
+<pre tabindex="0"><code>Capturing Group 3
+(\\\$\\)
+</code></pre><p><code>\\\$\\</code> matches with <code>\$\</code> which will be our string for group 3.</p>
+<pre tabindex="0"><code>\.\s+.*\3\2\1p+$
+</code></pre><p><code>\.s+</code> matches with <code>. </code>. The <code>.*</code> matches with anything so we&rsquo;ll just leave it blank. <code>\3</code> will match with whatever we had as our string for capturing group 3, so <code>\$\</code>. Similarly <code>\2</code> matches with <code>ab</code> and <code>\1</code> matches with <code>1234567890-$$$$</code>. Finally <code>p+</code> will just match with <code>p</code>. So our last string will be <code>. \$\ab1234567890-$$$$p</code></p>
+<p>Now combining all of these strings we get our answer which is <code>1234567890-$$$$ ab1\$\. \$\ab1234567890-$$$$p</code>.</p>
+<h2 id="forensics-3">Forensics 3</h2>
+<p>There is a backdoor within the DNS server previously planted by our old CEO. The backdoor is programmed to run commands from a certain file location.</p>
+<p>What is the absolute path of the file needed to run a command under the DNS server?</p>
+<p>After turning on windows defender and fixing a few settings through the GUI, I discovered that it had quarantined <code>C:\:DNS.exe</code>. Unfortunately, when I tried restoring it nothing would happen and then later on in the image defender just completely broke so I wasn&rsquo;t able to solve this forensics. However, if I had been able to restore the backdoor my thought process for the rest of it would be to use Procmon from sysinternals to see what folders the backdoor was accessing, answering forensics 3. Thinking back I never tried <code>C:\:DNS.exe</code> so hopefully I didn&rsquo;t overthink this one lol.</p>
+<h1 id="vulnerabilites">Vulnerabilites</h1>
+<h2 id="user-auditing---7">User Auditing - 7</h2>
+<p>User auditing without a doubt was the most annoying part of the image as it had 29 authorized users.</p>
+<p>Going through the readme and comparing it to the users on the system, I found 4 unauthorized users. They were <code>rdiaz</code>, <code>ethawne</code>, <code>mmerlyn</code>, and <code>aheart</code>. Deleting them gave me 4 vulns.</p>
+<p>Looking at the passwords of the users I noticed that the <code>hwells</code> user had a very insecure password. So I changed their password and got another vuln.</p>
+<p>Lastly, I went through the different administrator groups and found <code>cramon</code> as an administrator and <code>tqueen</code> as an enterprise admin, both unauthorized. Removing them from these groups got me another 2 vulns.</p>
+<p>In total, I was able to find 7 user auditing vulns, which I&rsquo;m pretty sure is all there was.</p>
+<h2 id="prohibited-files---2">Prohibited files - 2</h2>
+<p>Next, I went through the many unwanted software present on the computer. First I removed the <code>Cain.zip</code> from Forensics 1. Cain and Abel is a password cracking tool for Windows so it shouldn&rsquo;t be on the system. +1 vuln.</p>
+<p>Again using the Everything tool, I selected media files and filtered them to not show files in <code>C:\WinSxS</code> as there&rsquo;s a lot of junk in there. Scrolling down a bit or sorting by date will reveal 4 media files. Deleting them got me another vuln.</p>
+<p>I checked other types of files, looked for alternate data streams, checked for shadow copies, etc. but found nothing else.</p>
+<h2 id="unwanted-software---5">Unwanted Software - 5</h2>
+<p>Then I went through and uninstalled/deleted <code>MineSweeper, TeamViewer, Nmap, CCleaner, and Radmin Server,</code> racking up another 5 vulns.</p>
+<p>I didn&rsquo;t check individual user&rsquo;s local installs or portable applications meaning there could have possibly been more but I managed to find 6 in total.</p>
+<h2 id="application-updates---0">Application Updates - 0</h2>
+<p>This one was a little rough. I went through and updated a bunch of stuff all to get nothing. Updating Firefox most likely gave me a point however it was broken and I couldn&rsquo;t get it to work. I could have uninstalled Firefox and installed it again fresh but it seemed like too much work and I didn&rsquo;t do it. I most likely also missed updating one of the software installed netting me 0 vulns in this category.</p>
+<h2 id="operating-system-update---1">Operating System Update - 1</h2>
+<p>This one was just enabling Windows automatic updates, nothing special.</p>
+<h2 id="malware---3">Malware - 3</h2>
+<p>As explained in Forensics 3, all I did was turn the defender on from group policy, change a few settings from the GUI, and run a scan. It detected both the <code>tini backdoor(:DNS.exe)</code> and <code>rcat backdoor</code>. I also ran a Malwarebytes scan which detected the sticky keys backdoor. This backdoor works by renaming a shell, in this case, <code>cmd.exe</code> to <code>sethc.exe</code> and placing it in system32. Now when you press shift in succession windows will try and open <code>sethc.exe</code> and instead will open the shell with <code>nt authority</code> permissions. Removing all three got me 3 more vulns.</p>
+<p>There could have been many more that I didn&rsquo;t find as malware and persistence mechanisms are very widespread. Autoruns is usually a go-to for detecting persistence however even it isn&rsquo;t perfect. It is more about just knowing where to look and what to look for.</p>
+<h2 id="application-security---6">Application Security - 6</h2>
+<p>We don&rsquo;t talk about this category as I suck at it.</p>
+<h3 id="remote-access">Remote Access</h3>
+<p>I decided to enable network-level authentication. This will force the client to authenticate earlier in the connection process enhancing security. To enable this you can either do it via group policy or registry. I&rsquo;m a big boy so I primarily use the registry. <code>HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services\UserAuthentication</code> must be set to <code>1</code> to enable NLA.</p>
+<p>The next remote access vuln I found was not allowing LTP port redirection. If you do allow this a remote access user would be able to redirect server traffic to a ltp port. The use case for this is rare and the image didn&rsquo;t require this functionality so disabling it lessens the attack surface on the machine. To disable this you must set <code>HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services\fDisableLPT</code> to <code>1</code>.</p>
+<h3 id="firefox">Firefox</h3>
+<p>These are self-explanatory so I won&rsquo;t go into depth. Enabling the pop-up blocker and forcing the use of HTTPS websites only enhances the security by lessening the chance a user clicks on something they shouldn&rsquo;t or leak sensitive information through unencrypted traffic.</p>
+<h3 id="smb">SMB</h3>
+<p>Removed the insecure smb 1.0 version.</p>
+<h3 id="dns">DNS</h3>
+<p>DNS cache pollution or cache poisoning is a common attack when it comes to DNS servers. The below image illustrates how the attack works in theory</p>
+<p><img src="/images/CyberDiscord-Open-2023-Windows-Server-Writeup/poisoning.png" alt="poisoning"></p>
+<p><img src="/images/CyberDiscord-Open-2023-Windows-Server-Writeup/poisoned.png" alt="poisoned"></p>
+<p>To prevent such an attack we can set <code>HKLM\System\CurrentControlSet\Services\DNS\Parameters\SecureResponses</code> to <code>1</code>.</p>
+<p>This pretty much maxed out my basic knowledge of critical services but there are probably a dozen others.</p>
+<h2 id="defensive-countermeasures---2">Defensive Countermeasures - 2</h2>
+<p>Most attacks start with a simple phish in the sea. So preventing our users from becoming falling for them is extremely important. We can block dangerous websites which are most likely phishing campaigns through windows defender by setting <code>HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection</code> to <code>1</code>.</p>
+<p>Other threats could be on a system level so making it harder for 0-day exploits to be carried out is also an important security step. One of these settings is randomized memory allocation or ASLR. You can set this either through the GUI by going to the exploit protection settings or by using <code>Set-ProcessMitigation -System -Enable ASLR</code>.</p>
+<p>There was more but I didn&rsquo;t get any.</p>
+<h2 id="service-auditing---3">Service Auditing - 3</h2>
+<p>Many services are either not needed or directly decrease security. In general, if you don&rsquo;t need something disabling it will lower the attack surface making your machine more secure. The three services which weren&rsquo;t needed and provided points were the <code>World Wide Web Publishing service</code>, <code>Net. TCP Port Sharing service</code>, and <code>Telephony service</code>.</p>
+<h2 id="local-policy---4">Local Policy - 4</h2>
+<p>Man-in-the-middle attack(MITM) occurs when network traffic isn&rsquo;t signed and can be spoofed easily. We can prevent this by having LDAP sign all of its communications. To do this you can set <code>HKLM\System\CurrentControlSet\Services\NTDS\Parameters\LDAPServerIntegrity</code> to <code>2</code> or set it through security options in the GPO.</p>
+<p>Another MITM attack vector can come from SMB traffic so we should sign that as well. To do this you can set <code>HKLM\System\CurrentControlSet\Services\LanmanWorkstation\Parameters\RequireSecuritySignature</code> to <code>1</code> or set it through security options in the GPO.</p>
+<p>As computers get stronger and many encryption suites become insecure. RC4 and DES are examples of this. To prevent Windows from using these encryption suites for Kerberos you can set <code>HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters\SupportedEncryptionTypes</code> to <code>2147483640</code> or set it through security options in the GPO.</p>
+<p>DOS attacks come in various forms, with TCP SYN floods being one of the most common. In these attacks, the attacker floods the server with SYN packets without their corresponding ACK packets. This causes the server to be overwhelmed. To prevent this we can set a max on the number of these types of TCP packets by setting <code>HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\TcpMaxDataRetransmissions</code> to <code>3</code>or setting it through security options in the GPO.</p>
+<p>I know I know, I missed a bunch in audit policy and user rights, but unfortunately, I broke pretty much broke everything after running my script haha. That&rsquo;s what I get for only testing it on Windows 10 and not AD Windows Server.</p>
+<h2 id="account-policy---0">Account Policy - 0</h2>
+<p>Again I couldn&rsquo;t do this because I broke windows.</p>
+<h2 id="uncategorized-os-settings---2">Uncategorized OS Settings - 2</h2>
+<p>You really shouldn&rsquo;t be sharing the entirety of the <code>C:\</code> at all. Removing the share gave a vuln.</p>
+<p>Password hashes are stored in a file at <code>C:\Windows\NTDS\ntds.dit</code>, which means if someone can read this file they could try and crack the passwords. So it is best to not allow normal users to view this file. Looking at the permissions I saw that domain users could read it. After removing this permission I got my last vuln and shut the image off minutes before the 4-hour mark.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>I ended with 37/62 vulns and 60/100 points.</p>
+<p>Overall I thought I did pretty badly on this one ngl. For future notice, don&rsquo;t think that if a script doesn&rsquo;t break Windows 10 it won&rsquo;t wreck a AD server. I could have probably gotten another dozen vulns if I did that and knew how to do app sec. The 4-hour time limit was an experience too.</p>
+
+        </p>
+        
+    </div>
+
+    <div class="prev-next">
+        
+    </div>
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#forensics">Forensics</a>
+      <ul>
+        <li><a href="#forensics-1">Forensics 1</a></li>
+        <li><a href="#forensics-2">Forensics 2</a></li>
+        <li><a href="#forensics-3">Forensics 3</a></li>
+      </ul>
+    </li>
+    <li><a href="#vulnerabilites">Vulnerabilites</a>
+      <ul>
+        <li><a href="#user-auditing---7">User Auditing - 7</a></li>
+        <li><a href="#prohibited-files---2">Prohibited files - 2</a></li>
+        <li><a href="#unwanted-software---5">Unwanted Software - 5</a></li>
+        <li><a href="#application-updates---0">Application Updates - 0</a></li>
+        <li><a href="#operating-system-update---1">Operating System Update - 1</a></li>
+        <li><a href="#malware---3">Malware - 3</a></li>
+        <li><a href="#application-security---6">Application Security - 6</a>
+          <ul>
+            <li><a href="#remote-access">Remote Access</a></li>
+            <li><a href="#firefox">Firefox</a></li>
+            <li><a href="#smb">SMB</a></li>
+            <li><a href="#dns">DNS</a></li>
+          </ul>
+        </li>
+        <li><a href="#defensive-countermeasures---2">Defensive Countermeasures - 2</a></li>
+        <li><a href="#service-auditing---3">Service Auditing - 3</a></li>
+        <li><a href="#local-policy---4">Local Policy - 4</a></li>
+        <li><a href="#account-policy---0">Account Policy - 0</a></li>
+        <li><a href="#uncategorized-os-settings---2">Uncategorized OS Settings - 2</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    <span>&copy; 2023 Cyber V0ID</span>
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>
