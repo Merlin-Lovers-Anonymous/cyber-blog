@@ -47,7 +47,7 @@ Let's tackle this piece by piece starting with capturing group 1. `\d` matches d
 \s+
 ```
 
-`\s` just matches with whitespace characters like ` ` and `+` means we can have a 1-unlimited number of them.
+`\s` just matches with whitespace characters like ` `. `+` means we can have a 1-unlimited number of them.
 
 ```
 Capturing Group 2
@@ -104,7 +104,7 @@ Lastly, I went through the different administrator groups and found `cramon` as 
 In total, I was able to find 7 user auditing vulns, which I'm pretty sure is all there was.
 
 ## Prohibited files - 2
-Next, I went through the many unwanted software present on the computer. First I removed the `Cain.zip` from Forensics 1. Cain and Abel is a password cracking tool for Windows so it shouldn't be on the system. +1 vuln.
+Next, I went through the many unwanted software present on the computer. First I removed the `Cain.zip` from Forensics 1. Cain and Abel is a password cracking tool for Windows so it shouldn't be on the system.
 
 Again using the Everything tool, I selected media files and filtered them to not show files in `C:\WinSxS` as there's a lot of junk in there. Scrolling down a bit or sorting by date will reveal 4 media files. Deleting them got me another vuln. 
 
@@ -113,11 +113,11 @@ I checked other types of files, looked for alternate data streams, checked for s
 ## Unwanted Software - 5
 Then I went through and uninstalled/deleted `MineSweeper, TeamViewer, Nmap, CCleaner, and Radmin Server,` racking up another 5 vulns.
 
-I didn't check individual user's local installs or portable applications meaning there could have possibly been more but I managed to find 6 in total.
+I didn't check individual user's local installs or portable applications meaning there could have possibly been more but I managed to find 5 in total.
 
 ## Application Updates - 0
 
-This one was a little rough. I went through and updated a bunch of stuff all to get nothing. Updating Firefox most likely gave me a point however it was broken and I couldn't get it to work. I could have uninstalled Firefox and installed it again fresh but it seemed like too much work and I didn't do it. I most likely also missed updating one of the software installed netting me 0 vulns in this category.
+This one was a little rough. I went through and updated a bunch of stuff all to get nothing. Updating Firefox most likely would have given me a point however it was broken and I couldn't get it to work. I could have uninstalled Firefox and installed it again fresh but it seemed like too much work and I didn't do it. I most likely also missed updating one of the software installed netting me 0 vulns in this category.
 
 ## Operating System Update - 1
 This one was just enabling Windows automatic updates, nothing special.
@@ -135,7 +135,7 @@ We don't talk about this category as I suck at it.
 ### Remote Access 
 I decided to enable network-level authentication. This will force the client to authenticate earlier in the connection process enhancing security. To enable this you can either do it via group policy or registry. I'm a big boy so I primarily use the registry. `HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services\UserAuthentication` must be set to `1` to enable NLA.
 
-The next remote access vuln I found was not allowing LTP port redirection. If you do allow this a remote access user would be able to redirect server traffic to a ltp port. The use case for this is rare and the image didn't require this functionality so disabling it lessens the attack surface on the machine. To disable this you must set `HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services\fDisableLPT` to `1`.
+The next remote access vuln I found was not allowing LPT port redirection. If you do allow this a remote access user would be able to redirect server traffic to a lpt port. The use case for this is rare and the image didn't require this functionality so disabling it lessens the attack surface on the machine. To disable this you must set `HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services\fDisableLPT` to `1`.
 
 ### Firefox
 These are self-explanatory so I won't go into depth. Enabling the pop-up blocker and forcing the use of HTTPS websites only enhances the security by lessening the chance a user clicks on something they shouldn't or leak sensitive information through unencrypted traffic.
@@ -155,11 +155,11 @@ To prevent such an attack we can set `HKLM\System\CurrentControlSet\Services\DNS
 This pretty much maxed out my basic knowledge of critical services but there are probably a dozen others.
 
 ## Defensive Countermeasures - 2
-Most attacks start with a simple phish in the sea. So preventing our users from becoming falling for them is extremely important. We can block dangerous websites which are most likely phishing campaigns through windows defender by setting `HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection` to `1`.
+Most attacks start with a simple phish. So preventing users from falling for them is extremely important. We can block dangerous websites which are most likely phishing campaigns through windows defender by setting `HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection` to `1`.
 
 Other threats could be on a system level so making it harder for 0-day exploits to be carried out is also an important security step. One of these settings is randomized memory allocation or ASLR. You can set this either through the GUI by going to the exploit protection settings or by using `Set-ProcessMitigation -System -Enable ASLR`.
 
-There was more but I didn't get any.
+There was probably more but I didn't get any.
 
 ## Service Auditing - 3
 Many services are either not needed or directly decrease security. In general, if you don't need something disabling it will lower the attack surface making your machine more secure. The three services which weren't needed and provided points were the `World Wide Web Publishing service`, `Net. TCP Port Sharing service`, and `Telephony service`.
@@ -173,7 +173,7 @@ As computers get stronger and many encryption suites become insecure. RC4 and DE
 
 DOS attacks come in various forms, with TCP SYN floods being one of the most common. In these attacks, the attacker floods the server with SYN packets without their corresponding ACK packets. This causes the server to be overwhelmed. To prevent this we can set a max on the number of these types of TCP packets by setting `HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\TcpMaxDataRetransmissions` to `3`or setting it through security options in the GPO.
 
-I know I know, I missed a bunch in audit policy and user rights, but unfortunately, I broke pretty much broke everything after running my script haha. That's what I get for only testing it on Windows 10 and not AD Windows Server.
+I know I know, I missed a bunch in audit policy and user rights, but unfortunately, I broke pretty much everything after running my script haha. That's what I get for only testing it on Windows 10 and not AD Windows Server.
 
 ## Account Policy - 0
 Again I couldn't do this because I broke windows.
@@ -187,4 +187,4 @@ Password hashes are stored in a file at `C:\Windows\NTDS\ntds.dit`, which means 
 # Conclusion
 I ended with 37/62 vulns and 60/100 points.
 
-Overall I thought I did pretty badly on this one ngl. For future notice, don't think that if a script doesn't break Windows 10 it won't wreck a AD server. I could have probably gotten another dozen vulns if I did that and knew how to do app sec. The 4-hour time limit was an experience too. 
+Overall I thought I did pretty badly on this one ngl. For future notice, don't think that if a script doesn't break Windows 10 it won't wreck a AD server. I could have probably gotten another dozen vulns if I didn't do that and knew how to do app sec. The 4-hour time limit was an experience too. 
