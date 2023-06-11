@@ -1,4 +1,4 @@
-baseURL = "https://www.saltinecrackers.org/"
+baseURL = "http://www.saltinecrackers.org/"
 title = "Cyber V0ID"
 theme = "gokarna"
 languageCode = "en"
