@@ -2,7 +2,7 @@
 title: "CyberDiscord Open 2023 Windows Server Writeup"
 date: 2023-06-10
 description: "A writeup for the CyberDiscord Open 2023 Windows Server image."
-tags: ["CyberPatriot", "Writeup"]
+tags: ["CyberDiscord Open", "CyberPatriot", "Writeup"]
 type: post
 weight: 20
 showTableOfContents: true
@@ -89,7 +89,7 @@ There is a backdoor within the DNS server previously planted by our old CEO. The
 
 What is the absolute path of the file needed to run a command under the DNS server?
 
-After turning on windows defender and fixing a few settings through the GUI, I discovered that it had quarantined `C:\:DNS.exe`. Unfortunately, when I tried restoring it nothing would happen and then later on in the image defender just completely broke so I wasn't able to solve this forensics. However, if I had been able to restore the backdoor my thought process for the rest of it would be to use Procmon from sysinternals to see what folders the backdoor was accessing, answering forensics 3. Thinking back I never tried `C:\:DNS.exe` so hopefully I didn't overthink this one lol.
+Unfortunately I misunderstood this forensics question and wasn't able to solve it during the competition.
 
 # Vulnerabilites
 ## User Auditing - 7
