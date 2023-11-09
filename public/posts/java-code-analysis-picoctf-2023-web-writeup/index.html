@@ -17,26 +17,26 @@
     
 
     
-    <title>Dora - Super Hard - In Progress</title>
-    <meta name="description" content="We post writeups, guides, CyberPatriot practice images, etc. You can contact us through discord, our usernames are d0nkeyman and wilhelmthefirst">
-    <meta name="keywords" content='blog, gokarna, hugo'>
+    <title>Java Code Analysis!?! PicoCTF 2023 Web Writeup</title>
+    <meta name="description" content="A writeup for the Java Code Analysis challenge in PicoCTF 2023.">
+    <meta name="keywords" content='blog, gokarna, hugo, PicoCTF, Writeup, Web'>
 
-    <meta property="og:url" content="https://cybervoid.me/projects/dora/">
+    <meta property="og:url" content="https://cybervoid.me/posts/java-code-analysis-picoctf-2023-web-writeup/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Dora - Super Hard - In Progress">
-    <meta property="og:description" content="We post writeups, guides, CyberPatriot practice images, etc. You can contact us through discord, our usernames are d0nkeyman and wilhelmthefirst">
+    <meta property="og:title" content="Java Code Analysis!?! PicoCTF 2023 Web Writeup">
+    <meta property="og:description" content="A writeup for the Java Code Analysis challenge in PicoCTF 2023.">
     <meta property="og:image" content="https://cybervoid.me/images/avatar.webp">
     <meta property="og:image:secure_url" content="https://cybervoid.me/images/avatar.webp">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Dora - Super Hard - In Progress">
-    <meta name="twitter:description" content="We post writeups, guides, CyberPatriot practice images, etc. You can contact us through discord, our usernames are d0nkeyman and wilhelmthefirst">
-    <meta property="twitter:domain" content="https://cybervoid.me/projects/dora/">
-    <meta property="twitter:url" content="https://cybervoid.me/projects/dora/">
+    <meta name="twitter:title" content="Java Code Analysis!?! PicoCTF 2023 Web Writeup">
+    <meta name="twitter:description" content="A writeup for the Java Code Analysis challenge in PicoCTF 2023.">
+    <meta property="twitter:domain" content="https://cybervoid.me/posts/java-code-analysis-picoctf-2023-web-writeup/">
+    <meta property="twitter:url" content="https://cybervoid.me/posts/java-code-analysis-picoctf-2023-web-writeup/">
     <meta name="twitter:image" content="https://cybervoid.me/images/avatar.webp">
 
     
-    <link rel="canonical" href="https://cybervoid.me/projects/dora/" />
+    <link rel="canonical" href="https://cybervoid.me/posts/java-code-analysis-picoctf-2023-web-writeup/" />
 
     <link rel="stylesheet" type="text/css" href="https://cybervoid.me/css/normalize.min.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" type="text/css" href="https://cybervoid.me/css/main.css">
@@ -161,35 +161,66 @@
     </nav>
 </header>
 <main id="content">
-    
-
     <div class="post container">
-
     <div class="post-header-section">
-        <h1>Dora - Super Hard - In Progress</h1>
+        <h1>Java Code Analysis!?! PicoCTF 2023 Web Writeup</h1>
+        <small role="doc-subtitle">A writeup for the Java Code Analysis challenge in PicoCTF 2023.</small>
+        <p class="post-date">
+            July 22, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://cybervoid.me/tags/picoctf">PicoCTF</a></li>
+        
+            <li class="post-tag"><a href="https://cybervoid.me/tags/writeup">Writeup</a></li>
+        
+            <li class="post-tag"><a href="https://cybervoid.me/tags/web">Web</a></li>
+        
+        </ul>
     </div>
 
     <div class="post-content">
         <p>
-            <p>Author: Wilhelm</p>
-<p>Discord: wilhelmthefirst</p>
-<h2 id="image">Image</h2>
-<p>Coming Soon&hellip;</p>
-<p>Difficulty: Super Hard ~ Round 4</p>
-<p>Vulns: ?</p>
-<p>Notes: ?</p>
-<p>User: ?</p>
-<p>Password: ?</p>
-<h2 id="answer-key">Answer Key</h2>
-<p>Coming Soon&hellip;</p>
-<p>Walkthrough: ?</p>
+            <h1 id="description">Description</h1>
+<p>BookShelf Pico, my premium online book-reading service. I believe that my website is super secure. I challenge you to prove me wrong by reading the &lsquo;Flag&rsquo; book! Here are the credentials to get you started:</p>
+<p>Username: &ldquo;user&rdquo;</p>
+<p>Password: &ldquo;user&rdquo;</p>
+<h1 id="solution">Solution</h1>
+<p>Before even looking at the source code let&rsquo;s look through the website and see what we have to work with. Logging in with the provided credentials presents us with this page:</p>
+<p><img src="/images/Java-Code-Analysis-PicoCTF-2023-Web-Writeup/website.png" alt="website"></p>
+<p>On the top right we see our current account’s privilege of <code>Free</code>. We also see the <code>FLAG</code> book which has the <code>Admin</code> tag. Presumably we must trick the website into thinking we are an admin, and thus letting us read the flag. After trying to read the flag book and analyzing the traffic we see the following:</p>
+<p><img src="/images/Java-Code-Analysis-PicoCTF-2023-Web-Writeup/network.png" alt="network"></p>
+<p>In the request headers we see there is a <code>Bearer</code> authorization header followed by some token. In storage we can also see a cookie with a json and token:</p>
+<p><img src="/images/Java-Code-Analysis-PicoCTF-2023-Web-Writeup/cookie.png" alt="cookie"></p>
+<p>Searching <code>Bearer</code> in the source files provided to us we find this code:</p>
+<p><img src="/images/Java-Code-Analysis-PicoCTF-2023-Web-Writeup/jwtService.png" alt="jwtService"></p>
+<p>From this we can see that the website is using <code>jwtService</code> which after some googling is revealed to be an encoded json token. In the <code>JwtService</code> class we see something intriguing:</p>
+<p><img src="/images/Java-Code-Analysis-PicoCTF-2023-Web-Writeup/secretKey.png" alt="secretKey"></p>
+<p>The secret key being used to sign the jwt tokens is being created by a different method called <code>getServerSecret()</code> from a different class. Looking at the <code>getServerSecret()</code> implementation we might be initially overwhelmed by all of the code, however upon further inspection the secret key is not so secret:</p>
+<p><img src="/images/Java-Code-Analysis-PicoCTF-2023-Web-Writeup/generateRandomString.png" alt="generateRandomString"></p>
+<p>As seen in the picture the <code>getServerSecret()</code> method returns <code>newSecret</code>, which is set to the return of the method called <code>generateRandomString(32)</code>. Looking at that method we see that it always returns <code>1234</code>. Boom, we now have the secret key used to sign the jwt token. Now we are ready to forge our token. Taking the token we found earlier and putting it into cyberchef we can decode it into the json:</p>
+<p><img src="/images/Java-Code-Analysis-PicoCTF-2023-Web-Writeup/jwtDecode.png" alt="jwtDecode"></p>
+<p>Then we can copy our decoded json and simply change our role to <code>Admin</code> and put our userId to <code>2</code>, then sign it with our secret key:</p>
+<p><img src="/images/Java-Code-Analysis-PicoCTF-2023-Web-Writeup/jwtEncode.png" alt="jwtEncode"></p>
+<p>Then we can copy our json and put it in the cookie we saw earlier as the <code>token-payload</code> and then put our encoded token into the <code>auth-token</code> field:</p>
+<p><img src="/images/Java-Code-Analysis-PicoCTF-2023-Web-Writeup/cookieManipulation.png" alt="cookieManipulation"></p>
+<p>After this simply refreshing the page will fool the page into thinking we are an admin and allowing us to see the flag:</p>
+<p><img src="/images/Java-Code-Analysis-PicoCTF-2023-Web-Writeup/flag.png" alt="flag"></p>
+<p>Flag: <code>picoCTF{w34k_jwt_n0t_g00d_ca4d9701}</code></p>
 
         </p>
+        
+    </div>
+
+    <div class="prev-next">
+        
     </div>
 </div>
 
 
 
+    
 
         </main><footer class="footer">
     

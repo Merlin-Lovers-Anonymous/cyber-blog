@@ -5,7 +5,7 @@ type: page
 
 Author: Wilhelm
 
-Discord: wilhelm#6991
+Discord: wilhelmthefirst
 
 ## Image
 

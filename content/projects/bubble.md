@@ -5,7 +5,7 @@ type: page
 
 Author: Donkey
 
-Discord: Donkey#9999
+Discord: d0nkeyman
 
 ## Image
 

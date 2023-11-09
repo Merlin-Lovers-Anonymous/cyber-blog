@@ -1,5 +1,5 @@
-baseURL = "https://www.saltinecrackers.org/"
-title = "Cyber V0ID"
+baseURL = "https://cybervoid.me"
+title = "CyberV0ID"
 theme = "gokarna"
 languageCode = "en"
 defaultContentLanguage = "en"
@@ -10,8 +10,8 @@ enableRobotsTXT = true
 pygmentsStyle = "monokai"
 
 [params]
-  footer = "Cyber V0ID"
-  description = "We post writeups, guides, CyberPatriot practice images, etc. You can contact us through discord, our usernames are d0nkeyman and wilhelmthethird"
+  footer = "CyberV0ID"
+  description = "We post writeups, guides, CyberPatriot practice images, etc. You can contact us through discord, our usernames are d0nkeyman and wilhelmthefirst"
   avatarURL = "/images/avatar.webp"
   AvatarAltText = "avatar"
   avatarSize = "size-m"
