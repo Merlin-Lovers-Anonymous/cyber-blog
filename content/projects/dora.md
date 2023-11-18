@@ -1,5 +1,5 @@
 ---
-title: Dora - Super Hard - In Progress
+title: Dora - Super Hard Plus - In Progress
 type: page
 ---
 
@@ -11,7 +11,7 @@ Discord: wilhelmthefirst
 
 Coming Soon...
 
-Difficulty: Super Hard ~ Round 4
+Difficulty: Super Hard Plus ~> Round 4
 
 Vulns: ?
 

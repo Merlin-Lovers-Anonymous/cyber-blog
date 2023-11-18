@@ -1,5 +1,5 @@
 ---
-title: Baldi's Basics Server 2022 - Super Hard - In Progress
+title: Baldi's Basics Server 2022 - Super Hard Plus - In Progress
 type: page
 ---
 
@@ -9,13 +9,11 @@ Discord: d0nkeyman
 
 ## Image
 
-Coming Soon...
+Difficulty: Super Hard Plus ~> Round 4
 
-Difficulty: Super Hard ~ Round 4
+Vulns: 50
 
-Vulns: ?
-
-Notes: ?
+Notes: None
 
 User: ?
 
@@ -23,6 +21,6 @@ Password: ?
 
 ## Answer Key
 
-Coming Soon...
-
-Walkthrough: ?
+Vulnerability Categories: Yes
+Answer Key: No
+Walkthrough: No

@@ -17,7 +17,7 @@ Vulns: 30
 
 Notes: None
 
-User: Harambe 
+User: Harambe
 
 Password: 3stoyMuert0!
 

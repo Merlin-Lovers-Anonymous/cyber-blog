@@ -11,13 +11,13 @@ Discord: d0nkeyman
 
 [Download Image](https://drive.google.com/file/d/1Og8lIMVqGKKenFXTpWYhA8X-szXyRtcY/view?usp=share_link)
 
-Difficulty: Medium ~ Round 1-2
+Difficulty: Medium ~ No comparison
 
 Vulns: 24
 
 Notes: Easy vulns but extremely broken
 
-User: Rainbow Dash 
+User: Rainbow Dash
 
 Password: ItNe3dsT0Be20%C00L3r
 
@@ -25,4 +25,4 @@ Password: ItNe3dsT0Be20%C00L3r
 
 [View Answer Key](https://docs.google.com/document/d/1c5L6_FCVsWxdm69jHNWEFEvlPvDjNXYuHB1vmSmri1w/edit?usp=sharing)
 
-Walkthrough: No
+[View Walkthrough](/walkthroughs/my-little-pony-walkthrough/)
