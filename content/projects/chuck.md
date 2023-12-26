@@ -1,5 +1,5 @@
 ---
-title: Chuck E. Cheese Ubuntu 22 - Super Hard Plus - In Progress
+title: Chuck E. Cheese Ubuntu 22 - Super Hard - In Progress
 type: page
 ---
 
@@ -11,7 +11,7 @@ Discord: wilhelmthefirst
 
 Coming Soon...
 
-Difficulty: Super Hard Plus
+Difficulty: Super Hard
 
 Vulns: ?
 
