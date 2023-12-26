@@ -1,5 +1,5 @@
 ---
-title: Baldi's Basics Server 2022 - Super Hard Plus - In Progress
+title: Baldi's Basics Server 2022 - Super Hard
 type: page
 ---
 
@@ -9,18 +9,20 @@ Discord: d0nkeyman
 
 ## Image
 
-Difficulty: Super Hard Plus ~> Round 4
+[Download Image](https://drive.google.com/file/d/1CvZfnxI0kKJjOO_xFqf2UTLGX0R1VXAA)
+
+Difficulty: Super Hard
 
 Vulns: 50
 
-Notes: None
+Notes: Active Directory, IPsec, Users have reported seeing low disk space erros
 
-User: ?
+User: Student
 
-Password: ?
+Password: study
 
 ## Answer Key
 
-Vulnerability Categories: Yes
-Answer Key: No
-Walkthrough: No
+Vulnerability Categories: Coming Soon
+
+Walkthrough: Coming Soon

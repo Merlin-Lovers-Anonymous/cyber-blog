@@ -11,7 +11,7 @@ Discord: wilhelmthefirst
 
 Coming Soon...
 
-Difficulty: Super Hard Plus ~> Round 4
+Difficulty: Super Hard Plus
 
 Vulns: ?
 

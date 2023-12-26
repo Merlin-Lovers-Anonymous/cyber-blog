@@ -11,7 +11,7 @@ Discord: d0nkeyman
 
 [Download Image](https://drive.google.com/file/d/1ai3vff_pS_rABc8hsnE_0uv08MOZiB1W/view?usp=sharing)
 
-Difficulty: Easy ~ Round 1
+Difficulty: Easy
 
 Vulns: 30
 

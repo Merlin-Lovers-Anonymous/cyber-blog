@@ -11,7 +11,7 @@ Discord: d0nkeyman
 
 Coming Soon...
 
-Difficulty: Hard ~ Round 3
+Difficulty: Hard
 
 Vulns: ?
 

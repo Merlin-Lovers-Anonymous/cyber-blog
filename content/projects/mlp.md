@@ -11,7 +11,7 @@ Discord: d0nkeyman
 
 [Download Image](https://drive.google.com/file/d/1Og8lIMVqGKKenFXTpWYhA8X-szXyRtcY/view?usp=share_link)
 
-Difficulty: Medium ~ No comparison
+Difficulty: Medium
 
 Vulns: 24
 
