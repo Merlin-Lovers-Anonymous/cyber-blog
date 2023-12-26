@@ -11,7 +11,7 @@ pygmentsStyle = "monokai"
 
 [params]
   footer = "CyberV0ID"
-  description = "We post writeups, guides, CyberPatriot practice images, etc. You can contact us through discord, our usernames are d0nkeyman and wilhelmthefirst"
+  description = "We post write-ups, guides, and CyberPatriot practice images."
   avatarURL = "/images/avatar.webp"
   AvatarAltText = "avatar"
   avatarSize = "size-m"
