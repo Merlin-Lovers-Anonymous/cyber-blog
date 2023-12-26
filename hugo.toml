@@ -35,6 +35,78 @@ pygmentsStyle = "monokai"
       });
     </script>
   """
+  customFooterHTML = """
+
+    <style>
+
+            .contact {
+                text-align: center;
+                margin: 10px auto auto;
+                width: 50%;
+                padding: 10px;
+            }
+
+            .discord {
+                margin-top: -15px;
+                font-size: 15px;
+                opacity: 80%;
+            }
+
+            #pfps {
+                margin-top: -20px;
+                display: grid;
+                place-items: center;
+                text-align: center;
+            }
+
+            #donkeypfp {
+                margin-bottom: -20px;
+                margin-left: -20px;
+            }
+
+            .align-vertical {
+                display: flex;
+                align-items: center;
+            }
+
+            .pfp {
+                margin-left: 10px;
+                margin-right: 8px;
+                border-radius: 50%;
+                width: 25px;
+                height: 25px;
+            }
+
+            .description {
+                text-align: center;
+            }
+
+        </style>
+
+    <section class="contact">
+        <h3>Contact Us</h3>
+
+        <p class="discord">Discord</p>
+
+        <div id='pfps'>
+
+            <div id="donkeypfp" class="align-vertical">
+
+                <img class="pfp" src="https://cybervoid.me/images/donkeypfp.webp" alt="pfp"/>
+                <p class="pfptext">d0nkeyman</p>
+
+            </div>
+
+            <div id="wilhelmpfp" class="align-vertical">
+
+                <img class="pfp" src="https://cybervoid.me/images/wilhelmpfp.webp" alt="pfp"/>
+                <p class="pfptext">wilhelmthefirst</p>
+
+            </div>
+
+        </div>
+    </section>
+  """
   metaKeywords = ["blog", "gokarna", "hugo"]
 
 [menu]
