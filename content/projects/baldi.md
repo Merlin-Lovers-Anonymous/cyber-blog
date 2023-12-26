@@ -15,7 +15,7 @@ Difficulty: Super Hard
 
 Vulns: 50
 
-Notes: Active Directory, IPsec, Users have reported seeing low disk space erros
+Notes: Active Directory, IPsec, Users have reported seeing low disk space errors
 
 User: Student
 
