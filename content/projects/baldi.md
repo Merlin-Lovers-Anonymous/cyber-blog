@@ -9,7 +9,7 @@ Discord: d0nkeyman
 
 ## Image
 
-[Download Image](https://drive.google.com/file/d/1CvZfnxI0kKJjOO_xFqf2UTLGX0R1VXAA)
+[Download Image](https://drive.google.com/file/d/1woYKSkHiBAZI92D2ihTE72LNLABaGtXv)
 
 Difficulty: Super Hard
 
