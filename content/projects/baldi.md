@@ -23,6 +23,4 @@ Password: study
 
 ## Answer Key
 
-Vulnerability Categories: Coming Soon
-
-Walkthrough: Coming Soon
+[View Walkthrough](/posts/baldis-basics-answer-key/)

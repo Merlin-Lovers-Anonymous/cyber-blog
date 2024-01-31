@@ -25,4 +25,4 @@ Password: ItNe3dsT0Be20%C00L3r
 
 [View Answer Key](https://docs.google.com/document/d/1c5L6_FCVsWxdm69jHNWEFEvlPvDjNXYuHB1vmSmri1w/edit?usp=sharing)
 
-[View Walkthrough](/walkthroughs/my-little-pony-walkthrough/)
+[View Walkthrough](/posts/my-little-pony-walkthrough/)
