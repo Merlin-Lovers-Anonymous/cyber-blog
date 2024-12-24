@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on CyberV0ID</title>
-    <link>https://cybervoid.me/tags/</link>
+    <link>https://cybervoid.tech/tags/</link>
     <description>Recent content in Tags on CyberV0ID</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://cybervoid.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://cybervoid.tech/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PicoCTF</title>
-      <link>https://cybervoid.me/tags/picoctf/</link>
+      <link>https://cybervoid.tech/tags/picoctf/</link>
       <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://cybervoid.me/tags/picoctf/</guid>
+      <guid>https://cybervoid.tech/tags/picoctf/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Web</title>
-      <link>https://cybervoid.me/tags/web/</link>
+      <link>https://cybervoid.tech/tags/web/</link>
       <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://cybervoid.me/tags/web/</guid>
+      <guid>https://cybervoid.tech/tags/web/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Writeup</title>
-      <link>https://cybervoid.me/tags/writeup/</link>
+      <link>https://cybervoid.tech/tags/writeup/</link>
       <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://cybervoid.me/tags/writeup/</guid>
+      <guid>https://cybervoid.tech/tags/writeup/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CyberDiscord Open</title>
-      <link>https://cybervoid.me/tags/cyberdiscord-open/</link>
+      <link>https://cybervoid.tech/tags/cyberdiscord-open/</link>
       <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://cybervoid.me/tags/cyberdiscord-open/</guid>
+      <guid>https://cybervoid.tech/tags/cyberdiscord-open/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CyberPatriot</title>
-      <link>https://cybervoid.me/tags/cyberpatriot/</link>
+      <link>https://cybervoid.tech/tags/cyberpatriot/</link>
       <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://cybervoid.me/tags/cyberpatriot/</guid>
+      <guid>https://cybervoid.tech/tags/cyberpatriot/</guid>
       <description></description>
     </item>
     

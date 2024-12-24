@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CyberV0ID</title>
-    <link>https://cybervoid.me/</link>
+    <link>https://cybervoid.tech/</link>
     <description>Recent content on CyberV0ID</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://cybervoid.me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://cybervoid.tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java Code Analysis!?! PicoCTF 2023 Web Writeup</title>
-      <link>https://cybervoid.me/posts/java-code-analysis-picoctf-2023-web-writeup/</link>
+      <link>https://cybervoid.tech/posts/java-code-analysis-picoctf-2023-web-writeup/</link>
       <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://cybervoid.me/posts/java-code-analysis-picoctf-2023-web-writeup/</guid>
+      <guid>https://cybervoid.tech/posts/java-code-analysis-picoctf-2023-web-writeup/</guid>
       <description>Description BookShelf Pico, my premium online book-reading service. I believe that my website is super secure. I challenge you to prove me wrong by reading the &amp;lsquo;Flag&amp;rsquo; book! Here are the credentials to get you started:
 Username: &amp;ldquo;user&amp;rdquo;
 Password: &amp;ldquo;user&amp;rdquo;
@@ -21,10 +21,10 @@ Solution Before even looking at the source code let&amp;rsquo;s look through the
     
     <item>
       <title>CyberDiscord Open 2023 Windows Server Writeup</title>
-      <link>https://cybervoid.me/posts/cyberdiscord-open-2023-windows-server-writeup/</link>
+      <link>https://cybervoid.tech/posts/cyberdiscord-open-2023-windows-server-writeup/</link>
       <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://cybervoid.me/posts/cyberdiscord-open-2023-windows-server-writeup/</guid>
+      <guid>https://cybervoid.tech/posts/cyberdiscord-open-2023-windows-server-writeup/</guid>
       <description>Forensics Forensics 1 Question:
 Hash functions are one-way functions. Secure hash functions have several properties such as collision resistance, preimage resistance, and second preimage resistance. Hashes are the output of hash functions and are typically displayed to the user in hex.
 There is a file somewhere on this machine named &amp;ldquo;cain.zip&amp;rdquo;.
@@ -34,10 +34,10 @@ This question is pretty straightforward. The first step is to find this &amp;ldq
     
     <item>
       <title>Baldi&#39;s Basics Server 2022 - Super Hard - In Progress</title>
-      <link>https://cybervoid.me/projects/baldi/</link>
+      <link>https://cybervoid.tech/projects/baldi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cybervoid.me/projects/baldi/</guid>
+      <guid>https://cybervoid.tech/projects/baldi/</guid>
       <description>Author: Donkey
 Discord: d0nkeyman
 Image Coming Soon&amp;hellip;
@@ -52,10 +52,10 @@ Walkthrough: ?</description>
     
     <item>
       <title>Bubble Guppies Server 2019 - Hard - In Progress</title>
-      <link>https://cybervoid.me/projects/bubble/</link>
+      <link>https://cybervoid.tech/projects/bubble/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cybervoid.me/projects/bubble/</guid>
+      <guid>https://cybervoid.tech/projects/bubble/</guid>
       <description>Author: Donkey
 Discord: d0nkeyman
 Image Coming Soon&amp;hellip;
@@ -70,10 +70,10 @@ Walkthrough: ?</description>
     
     <item>
       <title>Chuck E. Cheese Ubuntu 22 - Hard - In Progress</title>
-      <link>https://cybervoid.me/projects/chuck/</link>
+      <link>https://cybervoid.tech/projects/chuck/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cybervoid.me/projects/chuck/</guid>
+      <guid>https://cybervoid.tech/projects/chuck/</guid>
       <description>Author: Wilhelm
 Discord: wilhelmthefirst
 Image Coming Soon&amp;hellip;
@@ -88,10 +88,10 @@ Walkthrough: ?</description>
     
     <item>
       <title>Cincinnati Zoo Windows 10 - Easy</title>
-      <link>https://cybervoid.me/projects/cincinnati/</link>
+      <link>https://cybervoid.tech/projects/cincinnati/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cybervoid.me/projects/cincinnati/</guid>
+      <guid>https://cybervoid.tech/projects/cincinnati/</guid>
       <description>Author: Donkey
 Discord: d0nkeyman
 Image Download Image
@@ -106,10 +106,10 @@ Walkthrough: No</description>
     
     <item>
       <title>Dora - Super Hard - In Progress</title>
-      <link>https://cybervoid.me/projects/dora/</link>
+      <link>https://cybervoid.tech/projects/dora/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cybervoid.me/projects/dora/</guid>
+      <guid>https://cybervoid.tech/projects/dora/</guid>
       <description>Author: Wilhelm
 Discord: wilhelmthefirst
 Image Coming Soon&amp;hellip;
@@ -124,10 +124,10 @@ Walkthrough: ?</description>
     
     <item>
       <title>My Little Pony Windows 10 - Medium</title>
-      <link>https://cybervoid.me/projects/mlp/</link>
+      <link>https://cybervoid.tech/projects/mlp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cybervoid.me/projects/mlp/</guid>
+      <guid>https://cybervoid.tech/projects/mlp/</guid>
       <description>Author: Donkey
 Discord: d0nkeyman
 Image Download Image

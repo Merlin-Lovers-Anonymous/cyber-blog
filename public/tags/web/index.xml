@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web on CyberV0ID</title>
-    <link>https://cybervoid.me/tags/web/</link>
+    <link>https://cybervoid.tech/tags/web/</link>
     <description>Recent content in Web on CyberV0ID</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://cybervoid.me/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://cybervoid.tech/tags/web/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java Code Analysis!?! PicoCTF 2023 Web Writeup</title>
-      <link>https://cybervoid.me/posts/java-code-analysis-picoctf-2023-web-writeup/</link>
+      <link>https://cybervoid.tech/posts/java-code-analysis-picoctf-2023-web-writeup/</link>
       <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://cybervoid.me/posts/java-code-analysis-picoctf-2023-web-writeup/</guid>
+      <guid>https://cybervoid.tech/posts/java-code-analysis-picoctf-2023-web-writeup/</guid>
       <description>Description BookShelf Pico, my premium online book-reading service. I believe that my website is super secure. I challenge you to prove me wrong by reading the &amp;lsquo;Flag&amp;rsquo; book! Here are the credentials to get you started:
 Username: &amp;ldquo;user&amp;rdquo;
 Password: &amp;ldquo;user&amp;rdquo;
